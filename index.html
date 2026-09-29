@@ -507,11 +507,13 @@
             margin-right: 15px;
         }
 
-        /* ACCORDION */
+        /* ACCORDION FAQ */
         .accordion-item {
             background: transparent;
             border: 2px solid var(--border-color);
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            border-radius: 8px !important;
+            overflow: hidden;
         }
 
         .accordion-button {
@@ -522,8 +524,8 @@
         }
 
         .accordion-button:not(.collapsed) {
-            background: rgba(229, 137, 10, 0.1);
-            color: var(--accent-blue);
+            background: rgba(229, 137, 10, 0.15);
+            color: var(--accent-yellow);
             box-shadow: none;
         }
 
@@ -790,7 +792,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html" style="margin-right: 0;"><img
-                    src="assets/img/logo/logo-batu-offroad.webp" onerror="this.src='assets/img/Logo/logo-batu-offroad.webp'" alt="Batu Offroad Logo" class="me-2"
+                    src="assets/img/logo/logo-batu-offroad.webp" alt="Batu Offroad Logo" class="me-2"
                     style="height: 35px; width: auto; object-fit: contain;" loading="lazy" decoding="async"><span
                     class="ms-1"
                     style="color: #fff; font-weight: 800; font-size: 1.1rem; white-space: nowrap; font-style: normal;">BATU
@@ -1313,8 +1315,8 @@
                         </div>
                         <div class="card-body bg-dark border-top border-secondary">
                             <h5 class="text-white">
-                                <a href="https://www.google.com/maps/place/4GFR%2BWC4,+Temas,+Kec.+Batu,+Kota+Batu,+Jawa+Timur+65315/@-7.8752375,112.5410781,17z/data=!3m1!4b1!4m5!3m4!1s0x2e7880d5908eaf39:0xefa276311e567eb!8m2!3d-7.8752375!4d112.5410781?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank"
-                                    class="text-white text-decoration-none">
+                                <a href="https://www.google.com/maps/place/4GFR%2BWC4,+Temas,+Kec.+Batu,+Kota+Batu,+Jawa+Timur+65315/@-7.8752375,112.5410781,17z/data=!3m1!4b1!4m5!3m4!1s0x2e7880d5908eaf39:0xefa276311e567eb!8m2!3d-7.8752375!4d112.5410781?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank" class="text-white text-decoration-none">
                                     <i class="fas fa-map-marker-alt text-blue me-2" aria-hidden="true"></i>LOKASI
                                     KAMI
                                 </a>
@@ -1327,18 +1329,17 @@
         </div>
     </section>
 
-    <section id="faq" class="py-4 bg-black">
+    <section id="faq" class="py-4">
         <div class="container py-3">
             <h2 class="text-center mb-4 text-white">Frequently Asked Questions</h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="accordion" id="faqAccordion">
                         <!-- FAQ 1 -->
-                        <div class="accordion-item bg-dark border-secondary mb-3">
+                        <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-dark text-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false"
-                                    aria-controls="faq1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
                                     Apakah harus membawa perlengkapan sendiri?
                                 </button>
                             </h2>
@@ -1352,11 +1353,10 @@
                         </div>
 
                         <!-- FAQ 2 -->
-                        <div class="accordion-item bg-dark border-secondary mb-3">
+                        <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-dark text-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false"
-                                    aria-controls="faq2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
                                     Apakah akses jalan menuju basecamp bisa dilalui mobil?
                                 </button>
                             </h2>
@@ -1370,29 +1370,28 @@
                         </div>
 
                         <!-- FAQ 3 -->
-                        <div class="accordion-item bg-dark border-secondary mb-3">
+                        <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-dark text-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false"
-                                    aria-controls="faq3">
-                                    Bagaimana dengan fasilitas sanitasi (Toilet/MCK)?
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                    Bagaimana cara melakukan reservasi atau pemesanan?
                                 </button>
                             </h2>
                             <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-dim">
-                                    Kenyamanan tamu adalah prioritas kami. Kami menyediakan fasilitas toilet dan kamar
-                                    mandi bilas yang bersih, terawat, dan memadai dengan suplai air gunung yang
-                                    melimpah, sehingga sangat ramah untuk keluarga, perempuan, dan anak-anak.
+                                    Anda dapat melakukan reservasi langsung melalui tombol WhatsApp yang tersedia di
+                                    website ini. Kami menyarankan untuk melakukan pemesanan minimal 1-2 minggu sebelum
+                                    tanggal kedatangan, terutama jika Anda berencana berkunjung di akhir pekan atau hari
+                                    libur nasional.
                                 </div>
                             </div>
                         </div>
 
                         <!-- FAQ 4 -->
-                        <div class="accordion-item bg-dark border-secondary mb-3">
+                        <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-dark text-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false"
-                                    aria-controls="faq4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
                                     Apakah tersedia akses listrik di area basecamp?
                                 </button>
                             </h2>
@@ -1406,11 +1405,10 @@
                         </div>
 
                         <!-- FAQ 5 -->
-                        <div class="accordion-item bg-dark border-secondary mb-3">
+                        <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-dark text-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false"
-                                    aria-controls="faq5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
                                     Bagaimana jika turun hujan saat jadwal offroad?
                                 </button>
                             </h2>
@@ -1419,25 +1417,6 @@
                                     Armada jeep kami dilengkapi dengan atap dan perlindungan yang memadai. Selain itu,
                                     Batu Offroad memiliki area pendopo permanen sebagai tempat berteduh sementara
                                     menunggu cuaca mendukung untuk melanjutkan perjalanan.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ 6 -->
-                        <div class="accordion-item bg-dark border-secondary mb-3">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-dark text-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false"
-                                    aria-controls="faq6">
-                                    Bagaimana cara melakukan reservasi atau pemesanan?
-                                </button>
-                            </h2>
-                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-dim">
-                                    Anda dapat melakukan reservasi langsung melalui tombol WhatsApp yang tersedia di
-                                    website ini. Kami menyarankan untuk melakukan pemesanan minimal 1-2 minggu sebelum
-                                    tanggal kedatangan, terutama jika Anda berencana berkunjung di akhir pekan atau hari
-                                    libur nasional.
                                 </div>
                             </div>
                         </div>
