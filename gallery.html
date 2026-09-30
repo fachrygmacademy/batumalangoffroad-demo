@@ -5,13 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Galeri Batu Offroad: Foto & Video Momen Seru - BATU OFFROAD</title>
+    <title>Galeri Batu Offroad Adventure: Foto & Video Momen Seru - Batu Offroad Adventure</title>
     <meta name="description"
         content="Lihat keseruan petualangan di BATU OFFROAD! Galeri foto kebersamaan, suasana alam, dan video highlight offroad kami.">
     <meta name="keywords"
         content="galeri offroad, foto offroad batu, video offroad indonesia, dokumentasi offroad kantor, batuoffroad gallery, foto suasana alam">
-    <meta name="author" content="BATU OFFROAD Team">
+    <meta name="author" content="Batu Offroad Adventure">
 
+    <!-- SEO, AEO & GEO Optimization -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://batuoffroad.web.id/gallery">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://batuoffroad.web.id/gallery">
+    <meta property="og:title" content="Galeri Batu Offroad: Foto & Video Momen Seru - BATU OFFROAD">
+    <meta property="og:description"
+        content="Lihat keseruan petualangan di BATU OFFROAD! Galeri foto kebersamaan, suasana alam, dan video highlight offroad kami.">
+    <meta property="og:image" content="https://batuoffroad.web.id/asset/IMG_20260218_133547_611.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://batuoffroad.web.id/gallery">
+    <meta property="twitter:title" content="Galeri Batu Offroad: Foto & Video Momen Seru - BATU OFFROAD">
+    <meta property="twitter:description"
+        content="Lihat keseruan petualangan di BATU OFFROAD! Galeri foto kebersamaan, suasana alam, dan video highlight offroad kami.">
+    <meta property="twitter:image" content="https://batuoffroad.web.id/asset/IMG_20260218_133547_611.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="assets/img/Logo/logo-batu-offroad.webp">
+    <link rel="apple-touch-icon" href="assets/img/Logo/logo-batu-offroad.webp">
+
+    <!-- JSON-LD for AEO / GEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageGallery",
+      "name": "Galeri Batu Offroad Adventure",
+      "url": "https://batuoffroad.web.id/gallery",
+      "publisher": {
+        "@type": "TravelAgency",
+        "name": "Batu Offroad Adventure",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://batuoffroad.web.id/assets/img/Logo/logo-batu-offroad.webp"
+        }
+      }
+    }
+    </script>
+    <meta name="theme-color" content="#562B08">
     <link rel="preload" as="image" href="asset/IMG_20260218_133547_611.webp">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,6 +77,12 @@
             --text-light: #ebd5c1;
             --text-grey: #ebd5c1;
             --border-line: #834510;
+        }
+
+        html,
+        body {
+            max-width: 100vw;
+            overflow-x: hidden;
         }
 
         /* BODY ADJUSTMENT */
@@ -153,12 +201,55 @@
 
         /* HERO SECTION (SHORT PADDING) */
         .page-header {
-            background: linear-gradient(to bottom, rgba(86, 43, 8, 0.7), var(--bg-deep)), url('assets/img/Hero/batu-offroad-img_151.jpg');
+            position: relative;
+            background: linear-gradient(to bottom, rgba(86, 43, 8, 0.85), var(--bg-deep)), url('assets/img/Hero/batu-offroad-img_151.jpg');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             /* REVISI: Padding header 40px */
-            padding: 40px 0 60px;
+            padding: 60px 0;
             border-bottom: 1px solid var(--border-line);
+        }
+
+        .bg-grid {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(rgba(229, 137, 10, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(229, 137, 10, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .page-header .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .page-header h1 {
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .page-header p,
+        .page-header .breadcrumb {
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .breadcrumb-item a {
+            color: var(--text-grey);
+            text-decoration: none;
+        }
+
+        .breadcrumb-item.active {
+            color: var(--accent-blue);
+        }
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            color: var(--accent-blue) !important;
+            font-weight: bold;
         }
 
         /* VIDEO SECTION */
@@ -571,14 +662,14 @@
     </style>
     <!-- SEO Update -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <link rel="canonical" href="https://batuoffroad.web.id/gallery.html">
+    <link rel="canonical" href="https://batuoffroad.web.id/gallery">
 
     <!-- OpenGraph Lengkap -->
     <meta property="og:title" content="Galeri Batu Offroad: Foto & Video Momen Seru - BATU OFFROAD">
     <meta property="og:description"
         content="Lihat keseruan petualangan di BATU OFFROAD! Galeri foto kebersamaan, suasana alam, dan video highlight offroad kami.">
     <meta property="og:image" content="https://batuoffroad.web.id/assets/img/Hero/batu-offroad-img_151.jpg">
-    <meta property="og:url" content="https://batuoffroad.web.id/gallery.html">
+    <meta property="og:url" content="https://batuoffroad.web.id/gallery">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Batu Offroad">
     <meta property="og:locale" content="id_ID">
@@ -596,8 +687,8 @@
       "name": "Batu Offroad",
       "image": "https://batuoffroad.web.id/assets/img/Hero/batu-offroad-img_151.jpg",
       "@id": "https://batuoffroad.web.id",
-      "url": "https://batuoffroad.web.id/gallery.html",
-      "telephone": "+6285784977074",
+      "url": "https://batuoffroad.web.id/gallery",
+      "telephone": "+6281233989707",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Jl. Gn. Banyak, Jurangrejo, Pandesari",
@@ -634,7 +725,7 @@
         <a href="#" class="btn-back-top" id="backToTop" title="Kembali ke Atas" aria-label="Kembali ke atas">
             <i class="fas fa-arrow-up" aria-hidden="true"></i>
         </a>
-        <a href="https://wa.me/6285784977074" class="btn-float-wa" target="_blank" title="Chat WhatsApp"
+        <a href="https://wa.me/6281233989707" class="btn-float-wa" target="_blank" title="Chat WhatsApp"
             aria-label="Hubungi WhatsApp">
             <i class="fab fa-whatsapp" aria-hidden="true"></i>
         </a>
@@ -682,14 +773,15 @@
                                     Outbound + Paintball</a></li>
                             <li><a class="dropdown-item" href="paket/paket-bromo.html">Paket Bromo</a></li>
                             <li><a class="dropdown-item" href="paket/paket-atv.html">Paket ATV</a></li>
-                            <li style="border-top: 1px solid var(--border-color);"><a class="dropdown-item active" href="paket.html">Lihat Semua Paket</a></li>
+                            <li style="border-top: 1px solid var(--border-color);"><a class="dropdown-item active"
+                                    href="paket.html">Lihat Semua Paket</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
-                        <a href="https://wa.me/6285784977074" class="btn btn-primary-custom" target="_blank"
+                        <a href="https://wa.me/6281233989707" class="btn btn-primary-custom" target="_blank"
                             aria-label="Kontak Kami">
                             <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>KONTAK
                         </a>
@@ -699,10 +791,21 @@
         </div>
     </nav>
 
-    <section class="page-header text-center">
-        <div class="container">
-            <h1 class="display-3 fw-bold">KESERUAN BATU OFFROAD</h1>
+    <section class="page-header position-relative text-center">
+        <div class="bg-grid"></div>
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="d-inline-block px-3 py-1 rounded-pill mb-3 border border-warning text-warning"
+                style="background: rgba(0,0,0,0.4);">
+                <small class="fw-bold tracking-wide"><i class="fas fa-camera me-1"></i> OUR MOMENTS</small>
+            </div>
+            <h1 class="display-3 text-white mb-2 fw-bold">KESERUAN BATU OFFROAD</h1>
             <p class="lead text-light">Dokumentasi momen kebersamaan, alam, dan kegembiraan.</p>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                </ol>
+            </nav>
         </div>
     </section>
 
@@ -811,7 +914,7 @@
                             Kami menyediakan paket custom untuk sekolah, kampus, atau event organizer dengan penawaran
                             spesial.
                         </p>
-                        <a href="https://wa.me/6285784977074"
+                        <a href="https://wa.me/6281233989707"
                             class="btn btn-light btn-lg fw-bold text-primary px-5 py-3">
                             <i class="fab fa-whatsapp me-2"></i> HUBUNGI KAMI
                         </a>
@@ -884,7 +987,7 @@
                     <ul class="list-unstyled small">
                         <li class="mb-3 d-flex align-items-start text-dim">
                             <i class="fab fa-whatsapp footer-icon mt-1" aria-hidden="true"></i>
-                            <span><b>WhatsApp:</b><br>0857-8497-7074 (Booking)</span>
+                            <span><b>WhatsApp:</b><br>0812-3398-9707 (Booking)</span>
                         </li>
                         <li class="mb-3 d-flex align-items-start text-dim">
                             <i class="fas fa-map-marker-alt footer-icon mt-1" aria-hidden="true"></i>

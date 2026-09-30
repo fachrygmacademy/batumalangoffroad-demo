@@ -1,18 +1,63 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Daftar Paket Outbound & Offroad Batu Malang - Batu Sunrise Camp</title>
+    <title>Daftar Paket Outbound & Offroad Batu Malang - Batu Offroad Adventure</title>
     <meta name="description"
-        content="Katalog lengkap paket wisata & outbound Batu Malang: Offroad Jeep 4x4, Team Building, Rafting, Paintball, Bromo, dan ATV. Reservasi harga promo sekarang bersama Batu Sunrise Camp!">
+        content="Katalog lengkap paket wisata & outbound Batu Malang: Offroad Jeep 4x4, Team Building, Rafting, Paintball, Bromo, dan ATV. Reservasi harga promo sekarang bersama BATU OFFROAD!">
     <meta name="keywords"
         content="paket offroad batu malang, paket outbound batu, offroad jeep batu, paket rafting batu, paintball batu malang, paket bromo, paket atv batu">
-    <meta name="author" content="Batu Sunrise Camp">
-    <meta name="theme-color" content="#562B08">
+    <meta name="author" content="Batu Offroad Adventure">
 
+    <!-- SEO, AEO & GEO Optimization -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://batuoffroad.web.id/paket">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://batuoffroad.web.id/paket">
+    <meta property="og:title" content="Daftar Paket Outbound & Offroad Batu Malang - BATU OFFROAD">
+    <meta property="og:description"
+        content="Katalog lengkap paket wisata & outbound Batu Malang: Offroad Jeep 4x4, Team Building, Rafting, Paintball, Bromo, dan ATV.">
+    <meta property="og:image" content="https://batuoffroad.web.id/asset/offroad-outbound-malang.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://batuoffroad.web.id/paket">
+    <meta property="twitter:title" content="Daftar Paket Outbound & Offroad Batu Malang - BATU OFFROAD">
+    <meta property="twitter:description"
+        content="Katalog lengkap paket wisata & outbound Batu Malang: Offroad Jeep 4x4, Team Building, Rafting, Paintball, Bromo, dan ATV.">
+    <meta property="twitter:image" content="https://batuoffroad.web.id/asset/offroad-outbound-malang.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="assets/img/Logo/logo-batu-offroad.webp">
+    <link rel="apple-touch-icon" href="assets/img/Logo/logo-batu-offroad.webp">
+
+    <!-- JSON-LD for AEO / GEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Paket Offroad Batu Malang",
+      "description": "Katalog lengkap paket wisata & outbound Batu Malang: Offroad Jeep 4x4, Team Building, Rafting.",
+      "image": "https://batuoffroad.web.id/asset/offroad-outbound-malang.webp",
+      "brand": {
+        "@type": "Brand",
+        "name": "BATU OFFROAD"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "url": "https://batuoffroad.web.id/paket",
+        "priceCurrency": "IDR",
+        "lowPrice": "150000",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+    <meta name="theme-color" content="#562B08">
     <link rel="preload" as="image" href="asset/offroad-outbound-malang.webp">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
@@ -39,6 +84,12 @@
 
         .text-blue {
             color: var(--accent-blue) !important;
+        }
+
+        html,
+        body {
+            max-width: 100vw;
+            overflow-x: hidden;
         }
 
         body {
@@ -450,7 +501,7 @@
         /* ACCORDION FAQ */
         .accordion-item {
             background: transparent;
-            border: 1px solid var(--border-color);
+            border: 2px solid var(--border-color);
             margin-bottom: 12px;
             border-radius: 8px !important;
             overflow: hidden;
@@ -460,6 +511,7 @@
             background: var(--bg-main);
             color: white;
             font-weight: bold;
+            font-size: 1.15rem;
         }
 
         .accordion-button:not(.collapsed) {
@@ -471,6 +523,7 @@
         .accordion-body {
             background: var(--bg-main);
             color: var(--text-dim);
+            font-size: 1.05rem;
         }
 
         /* CTA SECTION */
@@ -675,7 +728,7 @@
       "@graph": [
         {
           "@type": "ItemList",
-          "@id": "https://batuoffroad.web.id/paket.html#itemlist",
+          "@id": "https://batuoffroad.web.id/paket#itemlist",
           "name": "Daftar Paket Outbound & Offroad Batu Malang",
           "description": "Kumpulan paket wisata outbound, jeep offroad, rafting, paintball, bromo, dan ATV terbaik di Batu Malang.",
           "itemListElement": [
@@ -683,61 +736,61 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Paket Offroad + Fun Games",
-              "url": "https://batuoffroad.web.id/paket/paket-offroad-fungames.html"
+              "url": "https://batuoffroad.web.id/paket/paket-offroad-fungames"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Paket Offroad + Team Building",
-              "url": "https://batuoffroad.web.id/paket/paket-offroad-teambuilding.html"
+              "url": "https://batuoffroad.web.id/paket/paket-offroad-teambuilding"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Paket Offroad + Rafting + Fun Games",
-              "url": "https://batuoffroad.web.id/paket/paket-offroad-rafting-fungames.html"
+              "url": "https://batuoffroad.web.id/paket/paket-offroad-rafting-fungames"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "Paket Offroad + Paintball + Fun Games",
-              "url": "https://batuoffroad.web.id/paket/paket-offroad-paintball-fungames.html"
+              "url": "https://batuoffroad.web.id/paket/paket-offroad-paintball-fungames"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "Paket Offroad + Outbound + Paintball",
-              "url": "https://batuoffroad.web.id/paket/paket-offroad-outbound-paintball.html"
+              "url": "https://batuoffroad.web.id/paket/paket-offroad-outbound-paintball"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "Paket Bromo Private Panorama",
-              "url": "https://batuoffroad.web.id/paket/paket-bromo.html"
+              "url": "https://batuoffroad.web.id/paket/paket-bromo"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "Paket ATV Offroad Adventure",
-              "url": "https://batuoffroad.web.id/paket/paket-atv.html"
+              "url": "https://batuoffroad.web.id/paket/paket-atv"
             }
           ]
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://batuoffroad.web.id/paket.html#breadcrumb",
+          "@id": "https://batuoffroad.web.id/paket#breadcrumb",
           "itemListElement": [
             {
               "@type": "ListItem",
               "position": 1,
               "name": "Beranda",
-              "item": "https://batuoffroad.web.id/index.html"
+              "item": "https://batuoffroad.web.id/index"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Paket",
-              "item": "https://batuoffroad.web.id/paket.html"
+              "item": "https://batuoffroad.web.id/paket"
             }
           ]
         }
@@ -753,7 +806,7 @@
         <a href="#" class="btn-back-top" id="backToTop" title="Kembali ke Atas" aria-label="Kembali ke atas">
             <i class="fas fa-arrow-up" aria-hidden="true"></i>
         </a>
-        <a href="https://wa.me/6285784977074?text=Halo%20Admin,%20saya%20tertarik%20tanya%20informasi%20paket%20wisata"
+        <a href="https://wa.me/6281233989707?text=Halo%20Admin,%20saya%20tertarik%20tanya%20informasi%20paket%20wisata"
             class="btn-float-wa" target="_blank" title="Chat WhatsApp" aria-label="Hubungi WhatsApp">
             <i class="fab fa-whatsapp" aria-hidden="true"></i>
         </a>
@@ -805,7 +858,7 @@
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
-                        <a href="https://wa.me/6285784977074" class="btn btn-primary-custom" target="_blank"
+                        <a href="https://wa.me/6281233989707" class="btn btn-primary-custom" target="_blank"
                             aria-label="Kontak Kami">
                             <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>KONTAK
                         </a>
@@ -839,7 +892,7 @@
         <div class="container">
             <div class="row text-center g-3">
                 <div class="col-md-3 col-6 stat-item">
-                    <h3>500+</h3>
+                    <h3>180+</h3>
                     <small class="text-dim text-uppercase fw-bold">Event Sukses</small>
                 </div>
                 <div class="col-md-3 col-6 stat-item">
@@ -877,8 +930,8 @@
                         <div class="paket-img-box">
                             <div class="corner-deco-top"></div>
                             <div class="corner-deco-bottom"></div>
-                            <img src="assets/img/Paket/Offroad-Fungames.webp" alt="Paket Offroad + Fun Games Batu Malang"
-                                loading="lazy">
+                            <img src="assets/img/Paket/Offroad-Fungames.webp"
+                                alt="Paket Offroad + Fun Games Batu Malang" loading="lazy">
                         </div>
                         <div class="card-body-custom">
                             <div class="meta-pill-group">
@@ -899,7 +952,7 @@
                                 <a href="paket/paket-offroad-fungames.html" class="btn btn-outline-custom">
                                     <i class="fas fa-info-circle me-1"></i> DETAIL
                                 </a>
-                                <a href="https://wa.me/6285784977074?text=Halo%20Admin,%20saya%20tertarik%20booking%20Paket%20Offroad%20%2B%20Fun%20Games"
+                                <a href="https://wa.me/6281233989707?text=Halo%20Admin,%20saya%20tertarik%20booking%20Paket%20Offroad%20%2B%20Fun%20Games"
                                     target="_blank" class="btn btn-primary-custom">
                                     <i class="fab fa-whatsapp me-1"></i> BOOKING
                                 </a>
@@ -937,7 +990,7 @@
                                 <a href="paket/paket-offroad-teambuilding.html" class="btn btn-outline-custom">
                                     <i class="fas fa-info-circle me-1"></i> DETAIL
                                 </a>
-                                <a href="https://wa.me/6285784977074?text=Halo%20Admin,%20saya%20tertarik%20booking%20Paket%20Offroad%20%2B%20Team%20Building"
+                                <a href="https://wa.me/6281233989707?text=Halo%20Admin,%20saya%20tertarik%20booking%20Paket%20Offroad%20%2B%20Team%20Building"
                                     target="_blank" class="btn btn-primary-custom">
                                     <i class="fab fa-whatsapp me-1"></i> BOOKING
                                 </a>
@@ -975,7 +1028,7 @@
                                 <a href="paket/paket-offroad-rafting-fungames.html" class="btn btn-outline-custom">
                                     <i class="fas fa-info-circle me-1"></i> DETAIL
                                 </a>
-                                <a href="https://wa.me/6285784977074?text=Halo%20Admin,%20saya%20tertarik%20booking%20Paket%20Offroad%20%2B%20Rafting%20%2B%20Fun%20Games"
+                                <a href="https://wa.me/6281233989707?text=Halo%20Admin,%20saya%20tertarik%20booking%20Paket%20Offroad%20%2B%20Rafting%20%2B%20Fun%20Games"
                                     target="_blank" class="btn btn-primary-custom">
                                     <i class="fab fa-whatsapp me-1"></i> BOOKING
                                 </a>
@@ -1013,7 +1066,7 @@
                                 <a href="paket/paket-offroad-paintball-fungames.html" class="btn btn-outline-custom">
                                     <i class="fas fa-info-circle me-1"></i> DETAIL
                                 </a>
-                                <a href="https://wa.me/6285784977074?text=Halo%20Admin,%20saya%20tertarik%20booking%20Paket%20Offroad%20%2B%20Paintball%20%2B%20Fun%20Games"
+                                <a href="https://wa.me/6281233989707?text=Halo%20Admin,%20saya%20tertarik%20booking%20Paket%20Offroad%20%2B%20Paintball%20%2B%20Fun%20Games"
                                     target="_blank" class="btn btn-primary-custom">
                                     <i class="fab fa-whatsapp me-1"></i> BOOKING
                                 </a>
@@ -1051,7 +1104,7 @@
                                 <a href="paket/paket-offroad-outbound-paintball.html" class="btn btn-outline-custom">
                                     <i class="fas fa-info-circle me-1"></i> DETAIL
                                 </a>
-                                <a href="https://wa.me/6285784977074?text=Halo%20Admin,%20saya%20tertarik%20booking%20Paket%20Offroad%20%2B%20Outbound%20%2B%20Paintball"
+                                <a href="https://wa.me/6281233989707?text=Halo%20Admin,%20saya%20tertarik%20booking%20Paket%20Offroad%20%2B%20Outbound%20%2B%20Paintball"
                                     target="_blank" class="btn btn-primary-custom">
                                     <i class="fab fa-whatsapp me-1"></i> BOOKING
                                 </a>
@@ -1089,7 +1142,7 @@
                                 <a href="paket/paket-bromo.html" class="btn btn-outline-custom">
                                     <i class="fas fa-info-circle me-1"></i> DETAIL
                                 </a>
-                                <a href="https://wa.me/6285784977074?text=Halo%20Admin,%20saya%20tertarik%20booking%20Paket%20Bromo%20Private"
+                                <a href="https://wa.me/6281233989707?text=Halo%20Admin,%20saya%20tertarik%20booking%20Paket%20Bromo%20Private"
                                     target="_blank" class="btn btn-primary-custom">
                                     <i class="fab fa-whatsapp me-1"></i> BOOKING
                                 </a>
@@ -1105,8 +1158,8 @@
                         <div class="paket-img-box">
                             <div class="corner-deco-top"></div>
                             <div class="corner-deco-bottom"></div>
-                            <img src="assets/img/Paket/Paket-ATV.webp"
-                                alt="Paket ATV Offroad Adventure Batu Malang" loading="lazy">
+                            <img src="assets/img/Paket/Paket-ATV.webp" alt="Paket ATV Offroad Adventure Batu Malang"
+                                loading="lazy">
                         </div>
                         <div class="card-body-custom">
                             <div class="meta-pill-group">
@@ -1127,7 +1180,7 @@
                                 <a href="paket/paket-atv.html" class="btn btn-outline-custom">
                                     <i class="fas fa-info-circle me-1"></i> DETAIL
                                 </a>
-                                <a href="https://wa.me/6285784977074?text=Halo%20Admin,%20saya%20tertarik%20booking%20Paket%20ATV%20Offroad"
+                                <a href="https://wa.me/6281233989707?text=Halo%20Admin,%20saya%20tertarik%20booking%20Paket%20ATV%20Offroad"
                                     target="_blank" class="btn btn-primary-custom">
                                     <i class="fab fa-whatsapp me-1"></i> BOOKING
                                 </a>
@@ -1219,7 +1272,7 @@
                                 <div class="accordion-body">
                                     Pemesanan sangat mudah! Anda cukup menekan tombol <strong>BOOKING</strong> atau
                                     menghubungi admin via WhatsApp di <strong class="text-warning">+62
-                                        857-8497-7074</strong>. Tim kami akan membantu mengecek ketersediaan armada &
+                                        812-3398-9707</strong>. Tim kami akan membantu mengecek ketersediaan armada &
                                     tanggal jadwal Anda.
                                 </div>
                             </div>
@@ -1287,7 +1340,7 @@
                 Konsultasikan kebutuhan kegiatan gathering, outing perusahaan, atau liburan keluarga Anda kepada tim
                 Batu Sunrise Camp.
             </p>
-            <a href="https://wa.me/6285784977074?text=Halo%20Admin,%20saya%20ingin%20konsultasi%20paket%20wisata%20dan%20outbound"
+            <a href="https://wa.me/6281233989707?text=Halo%20Admin,%20saya%20ingin%20konsultasi%20paket%20wisata%20dan%20outbound"
                 class="btn btn-primary-custom btn-lg px-5 py-3" target="_blank">
                 <i class="fab fa-whatsapp me-2"></i>HUBUNGI KAMI VIA WHATSAPP
             </a>
@@ -1358,7 +1411,7 @@
                     <ul class="list-unstyled small">
                         <li class="mb-3 d-flex align-items-start text-dim">
                             <i class="fab fa-whatsapp footer-icon mt-1" aria-hidden="true"></i>
-                            <span><b>WhatsApp:</b><br>+62 857-8497-7074 (Booking)</span>
+                            <span><b>WhatsApp:</b><br>+62 812-3398-9707 (Booking)</span>
                         </li>
                         <li class="mb-3 d-flex align-items-start text-dim">
                             <i class="fas fa-map-marker-alt footer-icon mt-1" aria-hidden="true"></i>
